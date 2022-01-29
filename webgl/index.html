@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Makki Blackjack</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" width=1200 height=600 style="width: 1200px; height: 600px; background: #FFFFFF"></canvas>
+    <script src="Build/webgl.asm.loader.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/webgl.data",
+        frameworkUrl: "Build/webgl.asm.framework.js",
+        codeUrl: "Build/webgl.asm.js",
+        memoryUrl: "Build/webgl.asm.mem",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "markusikus",
+        productName: "Makki Blackjack",
+        productVersion: "0.019",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>
