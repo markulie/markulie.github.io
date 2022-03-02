@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\webgl",
+    "\\webgl\\assets",
+    "\\webgl\\assets\\css"
   ],
+  "SelectedNode": "\\webgl\\assets\\css\\style.css",
   "PreviewInSolutionExplorer": false
 }
