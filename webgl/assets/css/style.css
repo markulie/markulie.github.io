@@ -8,12 +8,12 @@ body {
     text-align: justify;
     margin: 0 auto 0 auto;
     max-width: 100%;
-    font-family: monospace;
+    font-family: 'Syne Mono', monospace;
 }
 
 a {
-  color: #ccc;
-  text-decoration: underline;
+  color: red;
+  text-decoration: none;
 }
 
 
@@ -27,8 +27,9 @@ a {
     text-justify: auto;
     margin: auto auto 100px auto;
     text-align: center;
-    border: 3px solid green;
-    width: 640px;
+ 
+    width: 800px;
+    font-size: 24px;
 }
 
 .info {
