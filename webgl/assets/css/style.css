@@ -48,7 +48,7 @@ a {
     max-width: 1280px; /*remove this line for full width */
     position: relative;
     background-color: aqua;
-    border: 3px solid green;
+
 }
 
 .webgl-content {
