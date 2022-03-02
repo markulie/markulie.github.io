@@ -1,12 +1,6 @@
-/* demo */
-
-* {
-  font-family: monospace;
-}
-
 body {
     background: deepskyblue;
-    color:  blue ;
+    color: blue;
     font-size: 17px;
     font-size: 9pt;
     line-height: 130%;
@@ -14,6 +8,7 @@ body {
     text-align: justify;
     margin: 0 auto 0 auto;
     max-width: 100%;
+    font-family: monospace;
 }
 
 a {
@@ -21,19 +16,38 @@ a {
   text-decoration: underline;
 }
 
+
+.logo {
+    margin: 100px auto 100px auto;
+    width: 40px;
+    height: 40px;
+    background-color: yellow;
+}
+.menu {
+    text-justify: auto;
+    margin: auto auto 100px auto;
+    text-align: center;
+    border: 3px solid green;
+    width: 640px;
+}
+
 .info {
-  width:100%;
-  padding:12px;
-  box-sizing: border-box;
+    text-align: center;
+    border: 3px solid green;
+    width: 640px;
+    padding: 12px;
+    box-sizing: border-box;
+    margin: auto;
 }
 
 /* webgl layout */
-
 .webgl-wrapper {
     display: inline-block;
     width: 100%;
     max-width: 1280px; /*remove this line for full width */
     position: relative;
+    background-color: aqua;
+    border: 3px solid green;
 }
 
 .webgl-content {
