@@ -9,11 +9,11 @@ body {
     font-size: 17px;
     font-size: 9pt;
     line-height: 130%;
-    width: 1280px;
+    
     text-align: justify;
     margin: 0 auto 0 auto;
     max-width: 100%;
-    font-family: "Gamer", monospace;
+
 }
 
 a {
@@ -23,16 +23,17 @@ a {
 
 
 .logo {
-    margin: 100px auto 100px auto;
+    margin: 60px auto 60px auto;
     width: 40px;
     height: 40px;
     background-color: yellow;
 }
 .menu {
     text-justify: auto;
-    margin: auto auto 100px auto;
+    margin: auto auto 60px auto;
     text-align: center;
     font-size: 40px;
+    font-family: "Gamer", monospace;
 }
 
 .info {
@@ -44,14 +45,24 @@ a {
     margin: auto;
 }
 
+.footer {
+    text-align: center;
+    padding: 12px;
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #502aa9;
+}
+
 /* webgl layout */
 .webgl-wrapper {
-    display: inline-block;
+    display: block; /*remove this line for full width */
     width: 100%;
     max-width: 1280px; /*remove this line for full width */
-    position: relative;
-    background-color: #00a8fe;
 
+    background-color: #00a8fe;
+    margin: auto;
+
+}
 }
 
 .webgl-content {
