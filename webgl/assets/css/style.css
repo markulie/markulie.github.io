@@ -3,13 +3,9 @@
     src: url("Gamer.ttf");
 }
 
-* {
-    font-family: "Gamer"
-}
-
 body {
     background-color: #602bb1;
-    color: blue;
+    color: white;
     font-size: 17px;
     font-size: 9pt;
     line-height: 130%;
@@ -21,7 +17,7 @@ body {
 }
 
 a {
-  color: red;
+  color: yellow;
   text-decoration: none;
 }
 
@@ -36,12 +32,12 @@ a {
     text-justify: auto;
     margin: auto auto 100px auto;
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
 }
 
 .info {
     text-align: center;
-    border: 3px solid green;
+
 
     padding: 12px;
     box-sizing: border-box;
@@ -54,7 +50,7 @@ a {
     width: 100%;
     max-width: 1280px; /*remove this line for full width */
     position: relative;
-    background-color: aqua;
+    background-color: #00a8fe;
 
 }
 

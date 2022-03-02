@@ -47,6 +47,7 @@
     <div class="info">
         <p>unity webgl responsive</p>
         <p>press F or <a href="#" onclick="myGameInstance.SetFullscreen(1)">click here</a> to toggle fullscreen</p>
+        dfsfsf
     </div>
 
 
@@ -66,20 +67,5 @@
         });
     </script>
 
-    <!-- check for F key press to toggle full screen -->
-    <script>
-        var isFullscreen = false;
-
-        document.addEventListener('keydown', function (event) {
-            if (event.which === 70) {
-                if (!isFullscreen) {
-                    myGameInstance.SetFullscreen(1);
-                } else {
-                    myGameInstance.SetFullscreen(0);
-                }
-                isFullscreen = !isFullscreen;
-            }
-        });
-    </script>
 </body>
 </html>
