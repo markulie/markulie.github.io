@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Gamer";
+    src: url("Gamer.ttf");
+}
+
+* {
+    font-family: "Gamer"
+}
+
 body {
     background-color: #602bb1;
     color: blue;
@@ -8,7 +17,7 @@ body {
     text-align: justify;
     margin: 0 auto 0 auto;
     max-width: 100%;
-    font-family: 'Syne Mono', monospace;
+    font-family: "Gamer", monospace;
 }
 
 a {
@@ -27,15 +36,13 @@ a {
     text-justify: auto;
     margin: auto auto 100px auto;
     text-align: center;
- 
-    width: 800px;
     font-size: 24px;
 }
 
 .info {
     text-align: center;
     border: 3px solid green;
-    width: 640px;
+
     padding: 12px;
     box-sizing: border-box;
     margin: auto;
