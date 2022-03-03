@@ -9,7 +9,7 @@ body {
     font-size: 17px;
     font-size: 9pt;
     line-height: 130%;
-    
+    width: 1280px;
     text-align: justify;
     margin: 0 auto 0 auto;
     max-width: 100%;
@@ -66,7 +66,7 @@ a {
     display: inline-block;
     width: 100%;
     max-width: 1280px; /*remove this line for full width */
-    background-color: #00a8fe;
+    background-color: yellow;
 }
 
 .webgl-content {
