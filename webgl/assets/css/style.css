@@ -44,6 +44,16 @@ body {
   max-width: 800px;
   box-sizing: border-box;
   background-color: burlywood;
+<<<<<<< HEAD
+=======
+}
+
+.footer {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: darkviolet;
+>>>>>>> 8761d4239a6cb31813af6dea45e63c0fe767af89
 }
 
 .footer {
