@@ -6,14 +6,21 @@
 
 body {
     background: #602bb1;
-    color: yellow;
+    color: white;
     font-size: 17px;
 }
 
-a {
-  color: yellow;
-  text-decoration: underline;
-}
+
+
+    a, a:visited {
+        text-decoration: none;
+        color: yellow;
+    }
+
+        a:hover {
+            text-decoration: none;
+            color: red;
+        }
 
 .logo {
     margin: 60px auto 60px auto;
@@ -26,17 +33,29 @@ a {
     text-justify: auto;
     margin: auto auto 60px auto;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-family: "Gamer", monospace;
 }
 
 .info {
   width:100%;
+  margin: 100px auto 100px auto;
   padding:12px;
+  max-width: 800px;
   box-sizing: border-box;
+  background-color: burlywood;
 }
 
+.footer {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    background-color: darkviolet;
+}
 
+.icon:hover {
+    fill: #DA4567;
+}
 
 
 
