@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\webgl"
+    "\\webgl",
+    "\\webgl\\assets",
+    "\\webgl\\assets\\css"
   ],
-  "SelectedNode": "\\webgl\\x.png",
+  "SelectedNode": "\\webgl\\assets\\css\\reset.css",
   "PreviewInSolutionExplorer": false
 }
