@@ -1,0 +1,206 @@
+* {
+    font-family: monospace;
+}
+
+html {
+    background: #602bb1;
+}
+
+body {
+    color: white;
+    font-size: 17px;
+    margin: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: yellow;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.logo {
+    margin: 60px auto 70px auto;
+    width: 40px;
+    height: 40px;
+}
+
+.menu {
+    margin: auto auto 50px auto;
+    text-align: center;
+}
+
+.menuItem {
+    margin: 0 10px 0 10px;
+}
+
+.menuItem:hover {
+    filter: sepia() saturate(10000%) hue-rotate(30deg)
+}
+
+.info {
+    width: 100%;
+    margin: 100px auto 100px auto;
+    padding: 12px;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    padding: 35px 0 10px 0;
+    box-sizing: border-box;
+    background-color: #90009a;
+    background-image: url("Data/footer.svg");
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.webgl-center {
+    text-align: center;
+}
+
+.webgl-wrapper {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px; /*remove this line for full width */
+    position: relative;
+    box-shadow: 4px 4px #4E006C;
+}
+
+.webgl-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.webgl-content * {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.aspect {
+    margin-top: calc(100% / 1280 * 600);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#unity-container {
+    width: 100%;
+    height: 100%;
+}
+
+#unity-container canvas {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#unity-container {
+    position: absolute
+}
+
+#unity-container.unity-desktop {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#unity-container.unity-mobile {
+    width: 100%;
+    height: 100%
+}
+
+#unity-canvas {
+    background-color: #FFF790;
+}
+
+.unity-mobile #unity-canvas {
+    width: 100%;
+    height: 100%
+}
+
+#unity-loading-bar {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none
+}
+
+#unity-logo {
+    width: 500px;
+    height: 1000px;
+    background: url('Data/x.gif') no-repeat center
+}
+
+#unity-progress-bar-empty {
+    width: 141px;
+    height: 18px;
+    margin-top: 10px;
+    background: url('') no-repeat center
+}
+
+#unity-progress-bar-full {
+    width: 0%;
+    height: 18px;
+    margin-top: 10px;
+    background: url('') no-repeat center
+}
+
+#unity-footer {
+    position: relative
+}
+
+.unity-mobile #unity-footer {
+    display: none
+}
+
+#unity-build-title {
+    float: right;
+    margin-right: 10px;
+    line-height: 38px;
+    font-family: arial;
+    font-size: 18px
+}
+
+#unity-fullscreen-button {
+    float: right;
+    width: 38px;
+    height: 38px;
+    background: url('Data/fullscreen-button.png') no-repeat center
+}
+
+#unity-warning {
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    transform: translate(-50%);
+    background: white;
+    padding: 10px;
+    display: none
+}
