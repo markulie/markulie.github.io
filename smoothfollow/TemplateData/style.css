@@ -42,14 +42,14 @@ body {
     width: 100px;
     height: 10px;
     margin-top: 10px;
-    background: url('progress-bar-empty-dark.png') no-repeat center
+    background: url('progress-bar-empty.png') no-repeat center
 }
 
 #unity-progress-bar-full {
     width: 0%;
     height: 10px;
     margin-top: 10px;
-    background: url('progress-bar-full-dark.png') no-repeat center
+    background: url('progress-bar-full.png') no-repeat center
 }
 
 #unity-footer {
