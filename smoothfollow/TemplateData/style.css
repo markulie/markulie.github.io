@@ -6,8 +6,6 @@ body {
 
 #unity-container {
     position: absolute;
-    border-style: solid;
-    border-color: deepskyblue;
 }
 
     #unity-container.unity-desktop {
@@ -22,7 +20,9 @@ body {
     }
 
 #unity-canvas {
-    background: #009cff
+    background: #009cff;
+    border-style: solid;
+    border-color: deepskyblue;
 }
 
 .unity-mobile #unity-canvas {
