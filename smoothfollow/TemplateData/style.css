@@ -39,7 +39,7 @@ body {
 }
 
 #unity-progress-bar-empty {
-    width: 100px;
+    width: 50px;
     height: 10px;
     margin-top: 10px;
     background: url('progress-bar-empty.png') no-repeat center
