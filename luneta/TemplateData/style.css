@@ -129,14 +129,17 @@ a:visited {
 
     .webgl-content .logo.Dark {
         background-image: url('x.gif');
+        filter: grayscale(100%);
     }
 
     .webgl-content .progress.Dark .empty {
         background-image: url('progress-bar-empty-light.png');
+        filter: grayscale(100%);
     }
 
     .webgl-content .progress.Dark .full {
         background-image: url('progress-bar-full-light.png');
+        filter: grayscale(100%);
     }
 
     .webgl-content .footer {
@@ -166,6 +169,7 @@ a:visited {
 
         .webgl-content .footer .fullscreen {
             background-image: url('fullscreen-button.png');
+            filter: grayscale(100%);
             width: 38px;
             float: right;
         }
