@@ -38,12 +38,12 @@ html {
 a,
 a:visited {
     text-decoration: none;
-    color: gray;
+    color: black;
 }
 
     a:hover {
         text-decoration: none;
-        color: black;
+        color: gray;
     }
 
 
@@ -104,7 +104,7 @@ a:visited {
     .webgl-content .progress {
         height: 5px;
         width: 50px;
-        margin-top: 90px;
+        margin-top: 40px;
     }
 
         .webgl-content .progress .empty {
