@@ -138,10 +138,7 @@ a:visited {
     }
 
     .webgl-content .progress.Dark .full {
-        background-image: url('progress-bar-full-light.png');
-       /* filter: grayscale(100%);*/
-        filter: brightness(0);
-        filter: invert(1);
+        background-image: url('progress-bar-empty-light.png');
     }
 
     .webgl-content .footer {
