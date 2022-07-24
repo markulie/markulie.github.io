@@ -10,12 +10,12 @@
     -o-background-size: 100%;
     /* Opera 9.5 */
     background-size: 100%;
-/*}
+}
 
 
 
 
-html {*/
+html {
     font-family: "Montserrat", sans-serif;
     background-color: white;
     color: black;
@@ -82,33 +82,11 @@ a:visited {
     }
 
 .logoLuneta {
-    margin: 80px auto 100px auto;
-    display: block;
-    width: 90%;
+    margin: 80px auto 0 auto;
+    width: 600px;
     height: auto;
 }
 
-.icon {
-    display: block;
-    width: 120px;
-    height: auto;
-    margin: 0 auto 80px auto;
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    transform: scale(1);
-    -o-transition: 1s;
-    -moz-transition: 1s;
-    -webkit-transition: 1s;
-    transition: 1s;
-}
-
-    .icon:hover {
-        filter: none;
-        transform: scale(1.2);
-        transition: opacity 1s, transform ease-out 1s, filter ease-out 1s;
-    }
 
 .appstore {
     text-align: center;
