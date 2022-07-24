@@ -43,26 +43,26 @@ body, html{
     padding:0;
 }
 
-#gameContainer canvas{
-    position:absolute;
-    transform:translate(-50%, -50%);
-    top:50%;
-    left:50%;
-
+#gameContainer canvas {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    max-width: 1280px;
 }
 
-.simmer{
+/*.simmer{
     position:absolute;
     bottom:10px;
     right:10px;
     color:#aaa;
     font-size:9px;
     font-family:sans-serif;
-    font-family:sans-serif;
+    font-family:sans-serif;*/
 
     /*want to remove the simmer branding? uncomment display:none below!*/
     /*display:none;*/
-}
+/*}
 
 .simmer a{
     color:#cccccc;
@@ -79,6 +79,6 @@ body, html{
 
 .simmer.hide {
     opacity:0;
-}
+}*/
 
 
