@@ -1,10 +1,21 @@
 
+.luneta {
+    background-image: url(images/luneta_background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: 100%;
+    /* Safari 3.0 */
+    -moz-background-size: 100%;
+    /* Gecko 1.9.2 (Firefox 3.6) */
+    -o-background-size: 100%;
+    /* Opera 9.5 */
+    background-size: 100%;
+/*}
 
 
 
 
-
-html {
+html {*/
     font-family: "Montserrat", sans-serif;
     background-color: white;
     color: black;
