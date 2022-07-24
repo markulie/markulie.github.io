@@ -6,10 +6,17 @@
 
 .webgl-content {
     position: absolute;
- /*   top: 50%;
+    /*   top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);*/
+
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+    max-width: 1280px; /*remove this line for full width */
+    position: relative;
+    box-shadow: 5px 5px #4E006C;
 }
 
     .webgl-content .logo, .progress {
