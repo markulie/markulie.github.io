@@ -1,6 +1,6 @@
 .logo {
     text-align: center;
-    font-size: 11pt;
+    font-size: 10pt;
     margin: 80px auto 70px auto;
     max-width: 100%;
 }
@@ -139,7 +139,7 @@ a:visited {
 
     .webgl-content .progress.Dark .full {
         background-image: url('progress-bar-full-light.png');
-        filter: grayscale(100%);
+       /* filter: grayscale(100%);*/
         filter: brightness(0);
         filter: invert(1);
     }
