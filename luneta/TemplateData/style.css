@@ -1,6 +1,76 @@
+.logo {
+    text-align: center;
+    font-size: 12pt;
+    margin: 80px auto 70px auto;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 11pt;
+    line-height: 130%;
+    word-wrap: break-word;
+    padding: 0px;
+    margin: auto;
+    max-width: 750px;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: gray;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+
+
+
+
+
 .webgl-center {
     text-align: center;
 }
+
+.content {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
 
 
 .webgl-content * {
@@ -22,7 +92,6 @@
     max-width: 1280px; /*remove this line for full width */
     position: relative;
 
-    background-color:black;
 }
 
     .webgl-content .logo, .progress {
