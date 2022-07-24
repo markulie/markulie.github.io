@@ -1,137 +1,3 @@
-
-.luneta {
-    background-image: url(images/luneta_background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: 100%;
-    /* Safari 3.0 */
-    -moz-background-size: 100%;
-    /* Gecko 1.9.2 (Firefox 3.6) */
-    -o-background-size: 100%;
-    /* Opera 9.5 */
-    background-size: 100%;
-}
-
-
-
-
-html {
-    font-family: "Montserrat", sans-serif;
-   
-    color: black;
-    font-size: 9pt;
-    line-height: 130%;
-}
-
-.logo {
-    text-align: center;
-    font-size: 14pt;
-    margin: 40px auto 70px auto;
-    max-width: 100%;
-}
-
-.links {
-    margin: 40px auto 60px;
-    text-align: center;
-    max-width: 100%;
-    font-size: 10pt;
-}
-
-.content {
-    width: 600px;
-    text-align: justify;
-    margin: 0 auto 0 auto;
-    max-width: 100%;
-}
-
-.contentCenter {
-    width: 600px;
-    text-align: center;
-    margin: 0 auto 0 auto;
-    max-width: 100%;
-}
-
-.content img {
-    max-width: 100%;
-}
-
-.contentCenter img {
-    max-width: 100%;
-}
-
-.script {
-    font-family: monospace;
-    font-size: 10pt;
-}
-
-.copyright {
-    font-size: 8pt;
-    margin: 70px auto 60px auto;
-    text-align: center;
-}
-
-a,
-a:visited {
-    text-decoration: none;
-    color: gray;
-}
-
-    a:hover {
-        text-decoration: none;
-        color: black;
-    }
-
-.logoLuneta {
-    margin: 80px auto 0 auto;
-}
-
-
-.appstore {
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-.thankyou {
-    max-width: 80%;
-    margin: 0 auto 100px auto;
-    text-align: center;
-}
-
-.socialColumn {
-    margin-top: 0;
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-.social {
-    margin-left: 3%;
-    margin-right: 3%;
-    font-size: 14pt;
-}
-
-.disabled {
-    color: #333333 !important;
-    pointer-events: none;
-    cursor: default;
-}
-
-.luneta {
-    background-image: url(images/luneta_background.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: 100%;
-    /* Safari 3.0 */
-    -moz-background-size: 100%;
-    /* Gecko 1.9.2 (Firefox 3.6) */
-    -o-background-size: 100%;
-    /* Opera 9.5 */
-    background-size: 100%;
-}
-
-
-
-
-
 .webgl-center {
     text-align: center;
 }
@@ -155,6 +21,8 @@ a:visited {
     width: 100%;
     max-width: 1280px; /*remove this line for full width */
     position: relative;
+
+    background-color:black;
 }
 
     .webgl-content .logo, .progress {
@@ -235,4 +103,3 @@ a:visited {
             width: 38px;
             float: right;
         }
-
