@@ -1,25 +1,74 @@
+<!--
+unity webgl responsive
+
+template by dom
+dom@crowscrowscrows.com
+https://twitter.com/zerstoerer
+
+source code on github
+https://github.com/sno/unity-webgl-responsive
+-->
+
 <!DOCTYPE html>
 <html lang="en-us">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | LUNETA</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
+    <title>%UNITY_WEB_NAME%</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- unity resources -->
+    <script src="%UNITY_WEBGL_LOADER_URL%"></script>
+
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/luneta.json", {onProgress: UnityProgress});
+      // instantiate webgl only if we're not on a touch device
+
+      var isTouch = ('ontouchstart' in document.documentElement);
+
+      if ( !isTouch ) {
+        var unityInstance = UnityLoader.instantiate("unityContainer", "%UNITY_WEBGL_BUILD_URL%");
+      }
     </script>
   </head>
+
   <body>
-    <div class="webgl-content">
-      <div id="gameContainer" style="width: 1280px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">LUNETA</div>
+    <div class="webgl-wrapper">
+      <div class="aspect" style="margin-top: calc(100% / %UNITY_WIDTH% * %UNITY_HEIGHT%);"></div>
+      <div class="webgl-content">
+        <div id="unityContainer"></div>
       </div>
     </div>
+
+    <div class="info">
+      <p>unity webgl responsive</p>
+      <p>press F or <a href="#" onclick="unityInstance.SetFullscreen(1)">click here</a> to toggle fullscreen</p>
+    </div>
+
+    <!-- feel free to remove all credits! -->
+    <div class="info">
+      <p>source code on <a href="https://github.com/sno/unity-webgl-responsive">github</a></p>
+      <p>template by dom / <a href="https://twitter.com/zerstoerer">@zerstoerer</a></p>
+    </div>
+
+    <!-- check for F key press to toggle full screen -->
+    <script>
+      var isFullscreen = false;
+
+      document.addEventListener('keydown', function(event) {
+          if (event.which === 70) {
+              if (!isFullscreen) {
+                unityInstance.SetFullscreen(1);
+              } else {
+                unityInstance.SetFullscreen(0);
+              }
+              isFullscreen = !isFullscreen;
+          }
+      });
+    </script>
   </body>
 </html>
