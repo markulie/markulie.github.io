@@ -17,6 +17,27 @@
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
 
+
+* {
+    font-family: sans-serif;
+}
+
+html {
+    background: #602bb1;
+}
+
+body {
+    color: white;
+    font-size: 17px;
+    margin: 0;
+}
+
+
+
+
+
+
+
 body, html{
     margin:0;
     padding:0;
