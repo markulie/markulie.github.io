@@ -17,7 +17,7 @@
 
 html {
     font-family: "Montserrat", sans-serif;
-    background-color: white;
+   
     color: black;
     font-size: 9pt;
     line-height: 130%;
@@ -26,7 +26,7 @@ html {
 .logo {
     text-align: center;
     font-size: 14pt;
-    margin: 80px auto 70px auto;
+    margin: 40px auto 70px auto;
     max-width: 100%;
 }
 
@@ -83,8 +83,6 @@ a:visited {
 
 .logoLuneta {
     margin: 80px auto 0 auto;
-    width: 600px;
-    height: auto;
 }
 
 
