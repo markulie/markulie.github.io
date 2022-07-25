@@ -265,7 +265,7 @@ article .post-meta {
 }
 
 body {
-    background: #1d0802;
+    background: black;
     color: #ebebeb;
     font-family: Montserrat, sans-serif;
     font-size: 1.6em;
@@ -3508,7 +3508,7 @@ a.link--inherit {
 .section--galaxy {
     background-position: top center;
     background-repeat: repeat;
-    background-color: #1d0802;
+    background-color: black;
 }
 
 .section--ui {
