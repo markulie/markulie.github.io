@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\luneta"
+    "\\luneta",
+    "\\luneta\\TemplateData"
   ],
-  "SelectedNode": "\\index.html",
+  "SelectedNode": "\\luneta\\TemplateData\\style.css",
   "PreviewInSolutionExplorer": false
 }
