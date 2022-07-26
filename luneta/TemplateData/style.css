@@ -140,7 +140,7 @@ a:visited {
     }
 
     .webgl-content .progress.Dark .full {
-        background-image: url('progress-bar-empty-light.png');
+        background-image: url('progress-bar-full-light.png');
     }
 
     .webgl-content .footer {
