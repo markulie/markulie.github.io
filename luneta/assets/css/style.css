@@ -87,12 +87,7 @@ a {
 
 
 
-.logo {
-    text-align: center;
-    font-size: 10pt;
-    margin: 80px auto 70px auto;
-    max-width: 100%;
-}
+
 
 
 
@@ -122,6 +117,13 @@ html {
     word-wrap: break-word;
     padding: 0px;
     margin: auto;
+}
+
+.logo {
+    text-align: center;
+    font-size: 10pt;
+    margin: 80px auto 70px auto;
+    max-width: 100%;
 }
 
 a,
