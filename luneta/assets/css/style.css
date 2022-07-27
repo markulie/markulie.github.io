@@ -1,6 +1,6 @@
 /* demo */
 
-* {
+/** {
   font-family: monospace;
 }
 
@@ -19,7 +19,7 @@ a {
   width:100%;
   padding:12px;
   box-sizing: border-box;
-}
+}*/
 
 /* webgl layout */
 
@@ -75,3 +75,79 @@ a {
 .webgl-content .footer .webgl-logo {background-image: url('../images/webgl-logo.png'); width: 204px; float: left;}
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('../images/fullscreen.png'); width: 38px; float: right; cursor:pointer;}
+
+
+
+
+
+
+
+
+
+
+
+
+.logo {
+    text-align: center;
+    font-size: 10pt;
+    margin: 80px auto 70px auto;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 10pt;
+    line-height: 130%;
+    word-wrap: break-word;
+    padding: 0px;
+    margin: auto;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+    a:hover {
+        text-decoration: none;
+        color: gray;
+    }
+
+.copyright {
+    font-size: 8pt;
+    margin: 50px auto 60px auto;
+    text-align: center;
+}
+
+.webgl-center {
+    text-align: center;
+}
+
+.content {
+    width: 600px;
+    text-align: center;
+    margin: 0 auto 0 auto;
+    max-width: 100%;
+}
