@@ -105,11 +105,12 @@
         /* for unity versions older than 2020, this is set in-line in index.html */
 
         .aspect {
+            margin-top: calc(100% / 1280 * 600);
         }
 
         /* progress bar */
 
-        .webgl-content .logo, .progress {
+       /* .webgl-content .logo, .progress {
             position: absolute;
             left: 50%;
             top: 50%;
@@ -155,7 +156,7 @@
 
         .webgl-content .progress.Dark .full {
             background-image: url('Data/progress-bar-full-light.png');
-        }
+        }*/
 
 /*        .webgl-content .footer {
             margin-top: 5px;
@@ -204,7 +205,7 @@
 
     <div class="webgl-center">
         <div class="webgl-wrapper">
-            <div class="aspect" style="margin-top: calc(100% / 1280 * 600);"></div>
+            <div class="aspect"></div>
             <div class="webgl-content">
                 <div id="unityContainer"></div>
             </div>
