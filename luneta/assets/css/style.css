@@ -170,7 +170,10 @@ a {
 
 
 
-
+* {
+    padding: 0;
+    margin: 0;
+}
 
 
 
@@ -219,11 +222,4 @@ a:visited {
     text-align: center;
     margin: 0 auto 0 auto;
     max-width: 100%;
-}
-
-#unity-fullscreen-button {
-    float: right;
-    width: 38px;
-    height: 38px;
-    background: url('Data/fullscreen-button.png') no-repeat center
 }
