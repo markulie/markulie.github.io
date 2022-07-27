@@ -2,25 +2,18 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Markaelie | LUNETA : a meditation game</title>
     <link rel="icon" type="image/png" href="https://markaelie.github.io/images/favicon.png">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/css/reset.css">
+    <!--<link rel="stylesheet" href="assets/css/reset.css">-->
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-
     <!-- unity resources -->
     <script src="Build/UnityLoader.js"></script>
-
     <script>
         // instantiate webgl only if we're not on a touch device
-
         var isTouch = ('ontouchstart' in document.documentElement);
-
         if (!isTouch) {
             var unityInstance = UnityLoader.instantiate("unityContainer", "Build/luneta.json");
         }
@@ -29,15 +22,12 @@
 
 <body>
 
-
     <div class="logo">
         <a href="https://markaelie.github.io/">
             <img src="Data/luneta_logo.png" width="250" height="auto" /><br /><br />
             by Markaelie
         </a>
-
     </div>
-
 
     <div class="webgl-center">
         <div class="webgl-wrapper">
@@ -45,14 +35,14 @@
             <div class="webgl-content">
                 <div id="unityContainer"></div>
             </div>
+            <p>
+                <a href="#" onclick="unityInstance.SetFullscreen(1)">Full screen</a>
+            </p>
         </div>
     </div>
-    <p>press F or <a href="#" onclick="unityInstance.SetFullscreen(1)">click here</a> to toggle fullscreen</p>
 
-
-    <div class="content">
-
-
+    <div class="content" style="margin-top: 70px">
+       
         <p>
             <em>Featured by Apple in 150+ countries.</em>
         </p>
