@@ -2051,6 +2051,7 @@ var UnityLoader = UnityLoader || {
         //    text: "OK",
         //    callback: r
         //}])
+        callback: e;
     },
     Blobs: {},
     loadCode: function (e, t, r) {
