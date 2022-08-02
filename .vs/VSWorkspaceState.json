@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\playa"
+    "\\luneta",
+    "\\luneta\\Build"
   ],
-  "SelectedNode": "\\playa\\main.css",
+  "SelectedNode": "\\luneta\\Build\\UnityLoader.js",
   "PreviewInSolutionExplorer": false
 }
