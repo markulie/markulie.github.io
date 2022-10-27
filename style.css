@@ -4,7 +4,7 @@ html {
     font-size: 10pt;
     line-height: 130%;
     word-wrap: break-word;
-    padding: 0px;
+    padding: 0;
     margin: auto;
     max-width: 750px;
 }
@@ -23,9 +23,9 @@ html {
     max-width: 100%;
 }
 
-    .content img {
-        max-width: 100%;
-    }
+.content img {
+    max-width: 100%;
+}
 
 .copyright {
     font-size: 8pt;
@@ -39,10 +39,10 @@ a:visited {
     color: gray;
 }
 
-    a:hover {
-        text-decoration: none;
-        color: black;
-    }
+a:hover {
+    text-decoration: none;
+    color: black;
+}
 
 .menu {
     text-align: center;
@@ -88,19 +88,17 @@ a:visited {
     white-space: nowrap;
     overflow-x: hidden;
     vertical-align: top;
-    position: relative;
-    display: inline-block;
     width: 20%;
     max-width: 150px;
 }
 
-    .article img {
-        max-width: 150px;
-        width: 100%;
-        display: block;
-    }
+.article img {
+    max-width: 150px;
+    width: 100%;
+    display: block;
+}
 
-@media only screen and (max-width : 150px) {
+@media only screen and (max-width: 150px) {
     .article img {
         max-width: 100%;
     }
@@ -114,6 +112,6 @@ a:visited {
     opacity: 1;
 }
 
-    .article:hover .hover-bg .hover-txt {
-        transform: translateY(0);
-    }
+.article:hover .hover-bg .hover-txt {
+    transform: translateY(0);
+}
