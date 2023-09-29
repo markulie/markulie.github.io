@@ -1,9 +1,9 @@
 const cacheName = "markulie-Multitouch-Unity-1.0";
 const contentToCache = [
-    "Build/Multitouch.loader.js",
-    "Build/Multitouch.framework.js.br",
-    "Build/Multitouch.data.br",
-    "Build/Multitouch.wasm.br",
+    "Build/multitouch.loader.js",
+    "Build/multitouch.framework.js",
+    "Build/multitouch.data",
+    "Build/multitouch.wasm",
     "TemplateData/style.css"
 
 ];
