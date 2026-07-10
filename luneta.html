@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mark Hunanyan - Light of Life</title>
+    <title>Mark Hunanyan - LUNETA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -486,7 +486,7 @@
         -webkit-transition: 1s;
         transition: 1s;
         margin-top: 100px;
-                margin-bottom: 100px;
+        margin-bottom: 100px;
       }
 
       .icon:hover {
@@ -530,9 +530,14 @@
         <div class="about-content">
           <main>
             <article>
-              <img src="images/luneta_logo.png" />
+              <img src="images/luneta_logo.png" style="border-radius: 0px" />
 
-              <div class="icon"><img src="images/markulie_luneta.png" /></div>
+              <div class="icon">
+                <img
+                  src="images/markulie_luneta.png"
+                  style="border-radius: 30%"
+                />
+              </div>
 
               <div align="center">
                 <iframe
@@ -568,17 +573,25 @@
                 </p>
 
                 <br /><br />
-                FEATURES
-                <ul>
-                  <li>4 Games in 1</li>
-                  <li>Meditation Relax Music</li>
-                  <li>Real Parallaxing</li>
-                  <li>Haptic Feedback Support</li>
-                  <li>Motion Gesture Events</li>
-                  <li>3D Touch and Haptic Support</li>
-                  <li>Integrated Store Services</li>
-                  <li>60 FPS Even on Older Devices</li>
-                </ul>
+                <div>
+                  <b>FEATURES</b>
+                  <ul
+                    style="
+                      margin: 0;
+                      padding-left: 0;
+                      list-style-position: inside;
+                    "
+                  >
+                    <li>4 Games in 1</li>
+                    <li>Meditation Relax Music</li>
+                    <li>Real Parallaxing</li>
+                    <li>Haptic Feedback Support</li>
+                    <li>Motion Gesture Events</li>
+                    <li>3D Touch and Haptic Support</li>
+                    <li>Integrated Store Services</li>
+                    <li>60 FPS Even on Older Devices</li>
+                  </ul>
+                </div>
               </div>
 
               <br /><br /><br />
@@ -646,7 +659,7 @@
       const PAGE_MODE = 'light'
       // Optional: force a specific background color for this page, e.g. '#F5F5F0'.
       // Leave as null to just use PAGE_MODE's default background.
-      const PAGE_BG_COLOR = "#AFCCD6"
+      const PAGE_BG_COLOR = '#EDEFEF'
 
       root.setAttribute('data-theme', PAGE_MODE)
       if (PAGE_BG_COLOR) {
