@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mark Hunanyan</title>
+    <title>Mark Hunanyan - About</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,7 +11,6 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/png" href="images/favicon.png" />
-
     <style>
       :root {
         --void: #0d0f10;
@@ -97,7 +96,7 @@
         color: var(--text);
         width: 42px;
         height: 42px;
-        border-radius: 8px;
+        border-radius: 4px;
         font-size: 22px;
         cursor: pointer;
       }
@@ -171,7 +170,13 @@
         z-index: 40;
       }
       body {
-        padding-top: 260px;
+        padding-top: 100px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #about {
+        flex: 1 0 auto;
       }
 
       /* ---------- SECTION LABELS ---------- */
@@ -205,13 +210,10 @@
       }
       .card {
         position: relative;
-        display: block;
         background: var(--panel);
         border: 1px solid var(--line);
         border-radius: 8px;
         overflow: hidden;
-        text-decoration: none;
-        color: inherit;
         transition:
           border-color 0.3s ease,
           transform 0.3s ease,
@@ -228,30 +230,36 @@
         overflow: hidden;
         background: var(--panel-2);
       }
-      .card-art img {
+      .card-art canvas {
         width: 100%;
         height: 100%;
         display: block;
-        object-fit: cover;
         filter: saturate(1) contrast(1);
         transition: filter 0.4s ease;
       }
-      .card:hover .card-art img {
+      .card:hover .card-art canvas {
         filter: hue-rotate(150deg) saturate(1.4) contrast(1.2);
       }
 
-      .card-date {
+      .pass-tag {
         position: absolute;
         top: 12px;
-        right: 12px;
+        left: 12px;
         font-family: var(--mono);
         font-size: 10px;
-        letter-spacing: 0.06em;
-        color: var(--text);
-        background: rgba(0, 0, 0, 0.45);
+        letter-spacing: 0.1em;
+        color: var(--void);
+        background: var(--green);
         padding: 3px 8px;
         border-radius: 2px;
+        text-transform: uppercase;
         z-index: 3;
+      }
+      .card:hover .pass-tag {
+        background: var(--signal);
+      }
+      .card:hover .pass-tag::after {
+        content: ' → WIREFRAME';
       }
 
       .card-art::after {
@@ -277,13 +285,7 @@
         font-family: var(--sans);
         font-weight: 600;
         font-size: 17px;
-        margin-bottom: 6px;
-      }
-      .card-desc {
-        font-size: 12.5px;
-        color: var(--muted);
-        line-height: 1.5;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
       }
       .card-tools {
         display: flex;
@@ -314,13 +316,43 @@
         margin-bottom: 16px;
         max-width: 60ch;
       }
+      .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-photo {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid var(--line);
+        margin-bottom: 28px;
+      }
+      .stat-list {
+        font-family: var(--mono);
+        font-size: 13px;
+      }
+      .stat-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 12px 0;
+        color: var(--muted);
+      }
+      .stat-row b {
+        color: var(--text);
+        font-weight: 600;
+      }
 
       .contact {
-        background: transparent;
-        border: none;
+        background: var(--panel);
+        border: 1px solid var(--line);
         border-radius: 8px;
         padding: 56px clamp(24px, 4vw, 64px);
         text-align: center;
+        transition:
+          background 0.3s ease,
+          border-color 0.3s ease;
       }
       .contact h2 {
         font-family: var(--mono);
@@ -329,54 +361,27 @@
       }
       .contact p {
         color: var(--muted);
-        margin-bottom: 36px;
+        margin-bottom: 32px;
       }
-      .contact-links {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 14px;
-      }
-      .contact-link {
-        display: inline-flex;
-        align-items: center;
-        gap: 10px;
+      .btn {
+        display: inline-block;
         font-family: var(--mono);
         font-size: 13px;
         letter-spacing: 0.06em;
         text-transform: uppercase;
         text-decoration: none;
-        color: var(--text);
-        border: 1px solid var(--line);
-        border-radius: 3px;
-        padding: 14px 24px;
-        transition:
-          border-color 0.25s ease,
-          color 0.25s ease,
-          background 0.25s ease,
-          transform 0.25s ease;
-      }
-      .contact-link:hover {
-        border-color: var(--signal);
-        color: var(--signal);
-        background: var(--panel-2);
-        transform: translateY(-2px);
-      }
-      .contact-link .arrow {
-        transition: transform 0.25s ease;
-      }
-      .contact-link:hover .arrow {
-        transform: translateX(4px);
-      }
-      .contact-link.primary {
         background: var(--signal);
         color: var(--void);
-        border-color: var(--signal);
         font-weight: 700;
+        padding: 14px 28px;
+        border-radius: 3px;
+        transition:
+          transform 0.2s ease,
+          background 0.2s ease;
       }
-      .contact-link.primary:hover {
+      .btn:hover {
+        transform: translateY(-2px);
         background: #ff7440;
-        color: var(--void);
       }
 
       footer {
@@ -401,7 +406,6 @@
           transition-duration: 0.001ms !important;
         }
       }
-
       @media (max-width: 768px) {
         header {
           background: var(--void);
@@ -450,15 +454,15 @@
 
     <header>
       <a class="brand" href="index.html"
-        >MARK HUNANYAN <span class="blink"></span
-        ><span class="label">TECH ARTIST</span></a
+        >MARK HUNANYAN <span class="blink"></span>
+        <span class="label">TECH ARTIST</span></a
       >
       <button class="menu-toggle" id="menuToggle">☰</button>
       <div class="nav-wrap" id="mobileNav">
         <nav>
-          <a href="#work">Work</a>
+          <a href="index.html#work">Work</a>
           <a href="about.html">About</a>
-          <a href="#contact">Contact</a>
+          <a href="index.html#contact">Contact</a>
           <a href="https://github.com/markulie" target="_blank" rel="noopener"
             >GitHub</a
           >
@@ -466,25 +470,53 @@
       </div>
     </header>
 
-    <section class="section" id="work">
-      <div class="grid" id="cardGrid"></div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="contact">
-        <h2>Contact</h2>
-        <p>markhuna@gmail.com</p>
-        <div class="contact-links">
-          <a class="contact-link primary" href="mailto:markhuna@gmail.com"
-            >Email <span class="arrow">→</span></a
-          >
-          <a
-            class="contact-link"
-            href="https://github.com/markulie"
-            target="_blank"
-            rel="noopener"
-            >GitHub <span class="arrow">→</span></a
-          >
+    <section class="section" id="about">
+      <div class="about-grid">
+        <div class="about-content">
+          <img
+            class="about-photo"
+            src="images/mark-hunanyan.jpg"
+            alt="Mark Hunanyan"
+          />
+          <article>
+            <p style="text-align: justify">
+              I'm Mark Hunanyan, a technical artist and creative technologist. I
+              was born in 1991 at the tender age of zero. One of my favorite
+              childhood memories is getting an 8-bit Famicom in the early '90s.
+              I still remember the excitement of connecting it to an old
+              black and white TV and playing my first interactive experiences
+              with a controller in my hands. It felt like discovering an
+              entirely new world. I was captivated by the idea that pressing
+              buttons could bring digital worlds to life.
+            </p>
+            <p style="text-align: justify">
+              That curiosity only grew stronger. As I got older, I got my first
+              computer, a Dell Inspiron 7000, a budget laptop released in 1997.
+              It opened the door to a much bigger universe. I became fascinated
+              by how games and software were made, and I wanted to understand
+              everything happening behind the screen.
+            </p>
+            <p style="text-align: justify">
+              Then I came across a copy of Discreet 3ds Max 5, and everything
+              changed. It felt like a new dimension had opened up. Instead of
+              just experiencing digital worlds, I could create them. From that
+              moment on, I knew this was what I wanted to do professionally.
+            </p>
+            <p style="text-align: justify">
+              Over the years, I've learned through experimentation, mistakes,
+              and persistence. Every project has been an opportunity to improve,
+              not only my technical skills but also the way I think about
+              creativity, interaction, and design.
+            </p>
+            <p style="text-align: justify">
+              I believe the best work comes from genuine curiosity and a passion
+              for creating. Whether I'm building interactive experiences,
+              designing digital art, or tackling technical challenges, I enjoy
+              turning ideas into something real. That mindset keeps me learning,
+              improving, and creating work that people can genuinely enjoy and
+              connect with.
+            </p>
+          </article>
         </div>
       </div>
     </section>
@@ -506,8 +538,8 @@
 
       // ---------- Page appearance ----------
       // Set the color mode this page opens in: 'dark' or 'light'.
-      const PAGE_MODE = 'dark'
-      // Optional: force a specific background color for this page, e.g. '#101214'.
+      const PAGE_MODE = 'light'
+      // Optional: force a specific background color for this page, e.g. '#F5F5F0'.
       // Leave as null to just use PAGE_MODE's default background.
       const PAGE_BG_COLOR = null
 
@@ -739,165 +771,6 @@
       ctx2.fillStyle = palette.bg
       ctx2.fillRect(0, 0, W, H)
       if (MINIGAME_ENABLED) drawField()
-
-      // Project data — edit freely. Put your image files in an "images/" folder
-      // next to this HTML file, then point "img" at each one.
-      // "link" can be an internal page (e.g. 'projects/foliage.html') or a full
-      // external URL (e.g. 'https://artstation.com/...') — either works.
-      const projects = [
-        {
-          title: 'WireColor Pro',
-          desc: 'WireColor Pro: Object wire color randomization, instance sync, gradients, and material control for 3ds Max.',
-          date: 'DEC 2014',
-          tools: ['MaxScript', '3ds Max', 'Free Download'],
-          img: 'images/markhunanyan_procolor.jpg',
-          link: 'https://github.com/markulie/3dsmax-wirecolor-pro',
-        },
-        {
-          title: 'Light of Life',
-          desc: 'Still Life 3D Artwork.',
-          date: 'MAR 2014',
-          tools: ['3ds Max', 'V-Ray'],
-          img: 'images/mark_hunanyan_light_of_life.jpg',
-          link: 'light-of-life.html',
-        },
-        {
-          title: 'Codename Playa',
-          desc: 'Open World Sandbox game made with Unreal Engine.',
-          date: 'JUL 2024',
-          tools: ['C++', 'Unreal'],
-          img: 'playa/environment-1024x576.jpg',
-          link: 'playa.html',
-        },
-        {
-          title: 'Unity Smooth Follow',
-          desc: 'Smooth Follow with Lerp for Unity.',
-          date: 'OCT 2022',
-          tools: ['C#', 'Unity', 'Free Download'],
-          img: 'images/markulie-smooth-follow.jpg',
-          link: 'https://github.com/markulie/unity-smooth-follow',
-        },
-        {
-          title: 'RandomX',
-          desc: 'Transform Randomizer for 3ds Max.',
-          date: 'SEP 2023',
-          tools: ['MaxScript', '3ds Max', 'Free Download'],
-          img: 'images/markhunanyan_randomx.jpg',
-          link: 'https://github.com/markulie/3dsmax-randomx',
-        },
-        {
-          title: 'AnimLayerCleaner',
-          desc: 'Bugged Animation Layer Cleaner for 3ds Max.',
-          date: 'SEP 2022',
-          tools: ['MaxScript', '3ds Max', 'Free Download'],
-          img: 'images/markulie-animlayercleaner.jpg',
-          link: 'https://github.com/markulie/3dsmax-anim-layer-cleaner',
-        },
-        {
-          title: 'Hand Rig',
-          desc: 'Hand Rig Demonstartion in Autodesk 3ds Max.',
-          date: 'APR 2015',
-          tools: ['3ds Max', 'Rigging', 'Free Download'],
-          img: 'images/mark_hunanyan_handrig_01.jpg',
-          link: 'https://github.com/markulie/3dsmax-hand-rig',
-        },
-        {
-          title: '"Tishka Trains"',
-          desc: '3D Cartoon TV Series.',
-          date: 'APR 2014',
-          tools: ['Maya', '3ds Max', 'mentalRay','After Effects'],
-          img: 'images/markhunanyan_trains.jpg',
-          link: 'trains.html',
-        },
-        {
-          title: 'VrayBlendMtl',
-          desc: 'A V-Ray Blend Material example for Autodesk 3ds Max.',
-          date: 'MAY 2013',
-          tools: ['3ds Max', 'V-Ray', 'Shading', 'Free Download'],
-          img: 'images/markhunanyan_vrayblendmtl.jpg',
-          link: 'https://github.com/markulie/3dsmax-vrayblendmtl',
-        },
-        {
-          title: 'LUNETA',
-          desc: '...',
-          date: 'APR 2017',
-          tools: ['C#', 'Unity'],
-          img: 'images/markulie_luneta.png',
-          link: 'luneta.html',
-        },
-        {
-          title: 'Unity Proper Multitouch',
-          desc: 'A proper implementation of multitouch input in Unity.',
-          date: 'AUG 2023',
-          tools: ['C#', 'Unity', 'Free Download'],
-          img: 'images/multitouch.png',
-          link: 'https://github.com/markulie/unity-multitouch',
-        },
-        {
-          title: 'VSCode Version Bar',
-          desc: 'A VS Code status bar that displays the current versions of VS Code, Node.js, and npm.',
-          date: 'NOV 2025',
-          tools: ['TypeScript', 'VSCode', 'Free Download'],
-          img: 'images/version-bar.jpg',
-          link: 'https://github.com/markulie/vscode-version-bar',
-        },
-        {
-          title: 'xCalc for 3ds Max',
-          desc: 'Simple Calculator for Autodesk 3ds Max.',
-          date: 'FEB 2015',
-          tools: ['MaxScript', '3ds Max', 'Free Download'],
-          img: 'images/3dsmax-xcalc.jpg',
-          link: 'https://github.com/markulie/3dsmax-xcalc',
-        },
-        {
-          title: 'xCalc for Maya',
-          desc: 'Simple Calculator for Autodesk Maya.',
-          date: 'FEB 2015',
-          tools: ['MEL', 'Maya', 'Free Download'],
-          img: 'images/maya-xcalc.jpg',
-          link: 'https://github.com/markulie/maya-xcalc',
-        },
-        {
-          title: 'Windows Cleaner',
-          desc: 'Windows Cleaning, Fixing, and Customizing Scripts Collection.',
-          date: 'JUL 2023',
-          tools: ['PowerShell', 'Windows', 'Free Download'],
-          img: 'images/windows-cleaner.jpg',
-          link: 'https://github.com/markulie/windows-cleaner',
-        },
-        {
-          title: 'Unity Always On Top Shader',
-          desc: 'Always On Top Shader for Unity Engine.',
-          date: 'OCT 2022',
-          tools: ['Shader', 'Unity', 'Free Download'],
-          img: 'images/Always-On-Top.png',
-          link: 'https://github.com/markulie/unity-always-on-top',
-        },
-      ]
-
-      const grid = document.getElementById('cardGrid')
-
-      projects.forEach((p) => {
-        const card = document.createElement('a')
-        card.className = 'card'
-        card.href = p.link
-        if (/^https?:\/\//.test(p.link)) {
-          card.target = '_blank'
-          card.rel = 'noopener'
-        }
-        card.innerHTML = `
-      <div class="card-art">
-        <span class="card-date">${p.date}</span>
-        <img src="${p.img}" alt="${p.title}" loading="lazy">
-      </div>
-      <div class="card-body">
-        <div class="card-title">${p.title}</div>
-        <div class="card-desc">${p.desc}</div>
-        <div class="card-tools">${p.tools.map((t) => `<span>${t}</span>`).join('')}</div>
-      </div>`
-        grid.appendChild(card)
-      })
-
       const menuToggle = document.getElementById('menuToggle')
       const mobileNav = document.getElementById('mobileNav')
       menuToggle.addEventListener('click', () => {
