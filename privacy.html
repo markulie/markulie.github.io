@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mark Hunanyan - Privacy Policy</title>
+    <meta
+      name="description"
+      content="Privacy policy for the applications, games, and tools published by Mark Hunanyan. No personal data is collected."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <style>
+      :root {
+        --void: #0d0f10;
+        --panel: #15181b;
+        --panel-2: #1b1f23;
+        --line: #2a3034;
+        --text: #edefef;
+        --muted: #7a8288;
+        --signal: #ff5a1f;
+        --blue: #3e8ede;
+        --green: #4cc38a;
+        --mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+        --sans:
+          'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      }
+      html[data-theme='light'] {
+        --void: #f3f2ee;
+        --panel: #ffffff;
+        --panel-2: #eae8e2;
+        --line: #d9d6cf;
+        --text: #14171a;
+        --muted: #63676b;
+        --signal: #d9480f;
+        --blue: #1f6fb2;
+        --green: #1f8f5f;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        color: var(--text);
+        font-family: var(--sans);
+        overflow-x: hidden;
+        transition: color 0.3s ease;
+      }
+      a {
+        color: inherit;
+      }
+      ::selection {
+        background: var(--signal);
+        color: var(--void);
+      }
+      :focus-visible {
+        outline: 2px solid var(--signal);
+        outline-offset: 3px;
+      }
+
+      /* ---------- NAV ---------- */
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px clamp(20px, 4vw, 56px);
+        font-family: var(--mono);
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        background: linear-gradient(var(--void), transparent);
+        pointer-events: none;
+      }
+      header * {
+        pointer-events: auto;
+      }
+      .nav-wrap {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: 1px solid var(--line);
+        color: var(--text);
+        width: 42px;
+        height: 42px;
+        border-radius: 4px;
+        font-size: 22px;
+        cursor: pointer;
+      }
+      .brand {
+        color: var(--text);
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        font-size: 16px;
+      }
+      .brand span {
+        color: var(--signal);
+      }
+      .brand .blink {
+        width: 8px;
+        height: 8px;
+        background: var(--signal);
+        display: inline-block;
+        animation: blink 2.2s ease-in-out infinite;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0.35;
+        }
+      }
+      .brand .label {
+        color: var(--muted);
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        font-size: 14px;
+      }
+      nav a {
+        margin-left: 24px;
+        color: var(--muted);
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      nav a:hover {
+        color: var(--text);
+      }
+
+      /* ---------- BACKGROUND ---------- */
+      #flowField {
+        position: fixed;
+        inset: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        display: block;
+        background: var(--void);
+      }
+      body {
+        padding-top: 180px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #privacy {
+        flex: 1 0 auto;
+      }
+
+      /* ---------- SECTION LABELS ---------- */
+      .section {
+        padding: 40px clamp(20px, 4vw, 56px) 96px;
+      }
+      .section-head {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 44px;
+      }
+      .section-head h1 {
+        font-family: var(--mono);
+        font-size: 14px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--text);
+        font-weight: 600;
+      }
+      .section-head .meta {
+        font-family: var(--mono);
+        font-size: 11px;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        text-transform: uppercase;
+      }
+
+      /* ---------- POLICY DOCUMENT ---------- */
+      .doc {
+        max-width: 68ch;
+        margin: 0 auto;
+      }
+      .doc h2 {
+        font-family: var(--mono);
+        font-size: 12px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--text);
+        margin: 44px 0 14px;
+      }
+      .doc h2:first-child {
+        margin-top: 0;
+      }
+      .doc p,
+      .doc li {
+        color: var(--muted);
+        line-height: 1.75;
+        font-size: 15px;
+      }
+      .doc p + p {
+        margin-top: 14px;
+      }
+      .doc ul {
+        margin: 14px 0 0;
+        padding-left: 20px;
+      }
+      .doc li + li {
+        margin-top: 10px;
+      }
+      .doc li::marker {
+        color: var(--signal);
+      }
+      .doc b,
+      .doc strong {
+        color: var(--text);
+        font-weight: 600;
+      }
+      .doc a {
+        color: var(--text);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        text-decoration-color: var(--signal);
+      }
+      .callout {
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-left: 3px solid var(--signal);
+        border-radius: 6px;
+        padding: 22px 24px;
+        margin-bottom: 8px;
+      }
+      .callout p {
+        color: var(--text);
+        font-size: 16px;
+      }
+      .contact-list {
+        font-family: var(--mono);
+        font-size: 13px;
+        margin-top: 14px;
+      }
+      .contact-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 12px 0;
+        border-top: 1px solid var(--line);
+        color: var(--muted);
+      }
+      .contact-row b {
+        color: var(--text);
+        font-weight: 600;
+        text-align: right;
+      }
+
+      footer {
+        padding: 28px clamp(20px, 4vw, 56px);
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex-wrap: wrap;
+        font-family: var(--mono);
+        font-size: 11px;
+        color: var(--muted);
+      }
+      footer a {
+        color: var(--muted);
+        text-decoration: none;
+      }
+      footer a:hover {
+        color: var(--text);
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.001ms !important;
+          transition-duration: 0.001ms !important;
+        }
+      }
+      @media (max-width: 768px) {
+        header {
+          background: var(--void);
+          padding: 16px 20px;
+        }
+        .brand .label {
+          display: none;
+        }
+        .menu-toggle {
+          display: block;
+        }
+        .nav-wrap {
+          display: none;
+          width: 100%;
+          margin-top: 16px;
+        }
+        .nav-wrap.open {
+          display: block;
+        }
+        nav {
+          display: flex;
+          flex-direction: column;
+        }
+        nav a {
+          margin: 0;
+          padding: 16px 0;
+          border-top: 1px solid var(--line);
+        }
+        body {
+          padding-top: 120px;
+        }
+        .contact-row {
+          flex-direction: column;
+          gap: 4px;
+        }
+        .contact-row b {
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="flowField"></canvas>
+
+    <header>
+      <a class="brand" href="index.html"
+        >MARK HUNANYAN <span class="blink"></span>
+        <span class="label">TECH ARTIST</span></a
+      >
+      <button class="menu-toggle" id="menuToggle">☰</button>
+      <div class="nav-wrap" id="mobileNav">
+        <nav>
+          <a href="index.html#work">Work</a>
+          <a href="about.html">About</a>
+          <a href="index.html#contact">Contact</a>
+          <a href="https://github.com/markulie" target="_blank" rel="noopener"
+            >GitHub</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <section class="section" id="privacy">
+      <div class="section-head">
+        <h1>Privacy Policy</h1>
+        <div class="meta">Last updated: 8 August 2026</div>
+      </div>
+
+      <div class="doc">
+        <div class="callout">
+          <p>
+            <b
+              >These apps do not collect, store, or share any personal
+              data.</b
+            >
+            There are no accounts, no sign-in, no analytics, and no
+            advertising.
+          </p>
+        </div>
+
+        <h2>Scope</h2>
+        <p>
+          This privacy policy applies to all applications, games, and tools
+          published by <b>Mark Hunanyan</b> (the “Apps”), on every platform
+          they are released for — including mobile, desktop, and web. It
+          explains what information the Apps handle — which, in short, is none.
+        </p>
+
+        <h2>Information We Collect</h2>
+        <p>
+          <b>The Apps do not collect any personal information.</b> We do not
+          ask for, gather, or transmit:
+        </p>
+        <ul>
+          <li>Names, email addresses, phone numbers, or postal addresses</li>
+          <li>User accounts, passwords, or login credentials</li>
+          <li>Location data</li>
+          <li>Contacts, photos, files, messages, or calendar data</li>
+          <li>
+            Device identifiers, advertising IDs, or usage and analytics data
+          </li>
+          <li>Payment or financial information</li>
+        </ul>
+
+        <h2>Data Stored on Your Device</h2>
+        <p>
+          Some Apps save settings, preferences, or progress so they work the
+          way you left them. This information stays on your device only, is
+          never transmitted anywhere, and is removed when you uninstall the
+          App.
+        </p>
+
+        <h2>Third-Party Services</h2>
+        <p>
+          The Apps contain no advertising networks, no analytics or crash
+          reporting SDKs, and no social media integrations. No third party
+          receives data from the Apps.
+        </p>
+        <p>
+          The Apps are distributed through app stores and platforms such as
+          Google Play, the Apple App Store, Steam, and itch.io. Those platforms
+          may collect certain information as part of distributing and running
+          apps — for example, purchase and install statistics, or crash reports
+          you choose to send them. That data is handled by the platform, not by
+          us, and is covered by each platform's own privacy policy, such as the
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener"
+            >Google Privacy Policy</a
+          >
+          or the
+          <a
+            href="https://www.apple.com/legal/privacy/"
+            target="_blank"
+            rel="noopener"
+            >Apple Privacy Policy</a
+          >.
+        </p>
+
+        <h2>Permissions</h2>
+        <p>
+          The Apps request only the permissions required for their features to
+          function. No permission is used to collect, store, or transmit
+          personal information.
+        </p>
+
+        <h2>Data Sharing and Sale</h2>
+        <p>
+          Because no data is collected, nothing is shared, sold, rented, or
+          disclosed to any third party for any purpose.
+        </p>
+
+        <h2>Children's Privacy</h2>
+        <p>
+          The Apps do not knowingly collect any information from anyone,
+          including children under the age of 13. No personal data is gathered
+          from users of any age, so there is nothing to disclose, delete, or
+          request under COPPA or similar regulations.
+        </p>
+
+        <h2>Your Rights</h2>
+        <p>
+          Privacy laws such as the GDPR and CCPA give you the right to access,
+          correct, or delete the personal data a company holds about you. We
+          hold no personal data about you, so there is nothing to access,
+          export, or delete. Uninstalling an App removes any locally stored
+          settings from your device.
+        </p>
+
+        <h2>Security</h2>
+        <p>
+          No personal data is transmitted or stored on any server we control,
+          which means there is no personal data that could be exposed in a
+          breach.
+        </p>
+
+        <h2>Changes to This Policy</h2>
+        <p>
+          If this policy changes — for example, if a future App version
+          introduces a feature that handles data differently — this page will
+          be updated and the “Last updated” date above will change. Continued
+          use of the Apps after an update means you accept the revised policy.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+          If you have any questions about this privacy policy, get in touch:
+        </p>
+        <div class="contact-list">
+          <div class="contact-row">
+            <span>Developer</span><b>Mark Hunanyan</b>
+          </div>
+          <div class="contact-row">
+            <span>Email</span
+            ><b><a href="mailto:markhuna@gmail.com">markhuna@gmail.com</a></b>
+          </div>
+          <div class="contact-row">
+            <span>Website</span
+            ><b
+              ><a href="https://markulie.github.io/">markulie.github.io</a></b
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© 2010–2026 Mark Hunanyan</div>
+      <div>
+        <a href="index.html">Home</a>
+        ·
+        <a href="https://github.com/markulie" target="_blank" rel="noopener"
+          >GitHub</a
+        >
+        · <a href="legal-notice.html">Legal Notice</a> ·
+        <a href="privacy.html">Privacy Policy</a>
+      </div>
+    </footer>
+
+    <script>
+      const root = document.documentElement
+
+      // ---------- Page appearance ----------
+      // Set the color mode this page opens in: 'dark' or 'light'.
+      const PAGE_MODE = 'light'
+      // Optional: force a specific background color for this page, e.g. '#F5F5F0'.
+      // Leave as null to just use PAGE_MODE's default background.
+      const PAGE_BG_COLOR = null
+
+      root.setAttribute('data-theme', PAGE_MODE)
+      if (PAGE_BG_COLOR) {
+        root.style.setProperty('--void', PAGE_BG_COLOR)
+      }
+
+      // ---------- Static background fill ----------
+      const canvas = document.getElementById('flowField')
+      const ctx2 = canvas.getContext('2d')
+      const BG = { dark: '#0D0F10', light: '#F3F2EE' }
+
+      function paintBackground() {
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight
+        ctx2.fillStyle = PAGE_BG_COLOR || BG[PAGE_MODE]
+        ctx2.fillRect(0, 0, canvas.width, canvas.height)
+      }
+      paintBackground()
+      window.addEventListener('resize', paintBackground)
+
+      // ---------- Mobile nav ----------
+      const menuToggle = document.getElementById('menuToggle')
+      const mobileNav = document.getElementById('mobileNav')
+      menuToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('open')
+        menuToggle.textContent = mobileNav.classList.contains('open')
+          ? '✕'
+          : '☰'
+      })
+      mobileNav.querySelectorAll('a').forEach((a) =>
+        a.addEventListener('click', () => {
+          mobileNav.classList.remove('open')
+          menuToggle.textContent = '☰'
+        }),
+      )
+    </script>
+  </body>
+</html>
