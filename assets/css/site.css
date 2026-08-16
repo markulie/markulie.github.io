@@ -703,8 +703,11 @@ main {
   text-decoration: none;
   color: var(--text);
 }
+/* External-link marker. Needs its own breathing room — it sits directly
+   after the title text with no whitespace in the markup. */
 .card__ext {
   display: inline-block;
+  margin-left: 0.35em;
   font-size: 0.7em;
   color: var(--muted);
   vertical-align: super;

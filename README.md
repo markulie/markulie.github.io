@@ -31,7 +31,7 @@ python3 -m http.server 8000
     fonts/              Share Tech Mono, self-hosted
     img/                pre-generated WebP
     favicon.png
-  games/smoothfollow/   Unity WebGL build, untouched
+  demos/smoothfollow/   Unity WebGL build, untouched
   media/playa.mp4
   robots.txt
   sitemap.xml
@@ -106,12 +106,18 @@ that size or larger; anything smaller has to be enlarged and will look soft.
 
 Also add the page to `sitemap.xml` if it is a new page rather than a new card.
 
-## Adding a Unity WebGL build
+## Adding a demo (Unity WebGL, etc.)
 
-Point Unity's build output at `games/<name>/` and commit. Unity's own
+`demos/` holds anything playable or runnable that ships as its own self-contained
+page — a game, a tool demo, a shader showcase. It is deliberately not called
+`games/`, because not everything you embed will be one.
+
+Point Unity's build output at `demos/<name>/` and commit. Unity's own
 `index.html`, `Build/`, and `TemplateData/` are used untouched, so a rebuild is
-just overwriting the folder. Link it from a card with `href="games/<name>/"` and
-export a `cover.jpg` for it by hand.
+just overwriting the folder. Link it from a card with `href="demos/<name>/"` and
+export a `cover.jpg` for it by hand. The `demo.json` beside it records the card
+text; nothing reads it automatically in this plain-HTML setup, but it keeps the
+folder self-describing.
 
 Set **Compression Format: Disabled** in Player Settings → Publishing Settings
 (or Gzip with Decompression Fallback). GitHub Pages cannot send the
