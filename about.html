@@ -1,0 +1,146 @@
+<!doctype html>
+<!-- Palette is set right here in the markup — no JavaScript, so there is
+     never a flash of the wrong theme. Change "dark" to "light" to flip. -->
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About — Mark Hunanyan</title>
+    <meta name="description" content="Mark Hunanyan — technical artist and creative technologist. From an 8-bit Famicom to 3ds Max, Unity, and Unreal." />
+    <link rel="canonical" href="https://markulie.github.io/about.html" />
+    <meta name="author" content="Mark Hunanyan" />
+    <meta name="theme-color" content="#f3f2ee" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mark Hunanyan" />
+    <meta property="og:title" content="About — Mark Hunanyan" />
+    <meta property="og:description" content="Mark Hunanyan — technical artist and creative technologist. From an 8-bit Famicom to 3ds Max, Unity, and Unreal." />
+    <meta property="og:url" content="https://markulie.github.io/about.html" />
+    <meta property="og:image" content="https://markulie.github.io/assets/img/og-default.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="About — Mark Hunanyan" />
+    <meta name="twitter:description" content="Mark Hunanyan — technical artist and creative technologist. From an 8-bit Famicom to 3ds Max, Unity, and Unreal." />
+    <meta name="twitter:image" content="https://markulie.github.io/assets/img/og-default.jpg" />
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/share-tech-mono-latin.woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/site.css?v=1" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <canvas id="flowField" aria-hidden="true" data-game="true"></canvas>
+    <button id="targetHit" class="target-hit" type="button">
+      <span class="sr-only">Release collected particles</span>
+    </button>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span>MARK HUNANYAN</span>
+        <span class="brand__blink" aria-hidden="true"></span>
+        <!-- Backspaces itself and types the next role. aria-hidden so the
+             link is announced as "MARK HUNANYAN", not every keystroke. -->
+        <span class="brand__label" id="brandLabel" aria-hidden="true">TECH ARTIST</span>
+      </a>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1 class="sr-only">About Mark Hunanyan</h1>
+
+      <section class="section" id="about">
+        <div class="about">
+          <img
+            class="about__photo"
+            src="assets/img/about/portrait.webp"
+            width="256"
+            height="256"
+            alt="Portrait of Mark Hunanyan"
+            fetchpriority="high"
+          />
+
+          <article>
+            <p>
+              I'm Mark Hunanyan, a technical artist and creative technologist. I
+              was born in 1991 at the tender age of zero. One of my favorite
+              childhood memories is getting an 8-bit Famicom in the early '90s.
+              I still remember the excitement of connecting it to an old black
+              and white TV and playing my first interactive experiences with a
+              controller in my hands. It felt like discovering an entirely new
+              world. I was captivated by the idea that pressing buttons could
+              bring digital worlds to life.
+            </p>
+            <p>
+              That curiosity only grew stronger. As I got older, I got my first
+              computer, a Dell Inspiron 7000, a budget laptop released in 1997.
+              It opened the door to a much bigger universe. I became fascinated
+              by how games and software were made, and I wanted to understand
+              everything happening behind the screen.
+            </p>
+            <p>
+              Then I came across a copy of Discreet 3ds Max 5, and everything
+              changed. It felt like a new dimension had opened up. Instead of
+              just experiencing digital worlds, I could create them. From that
+              moment on, I knew this was what I wanted to do professionally.
+            </p>
+            <p>
+              Over the years, I've learned through experimentation, mistakes,
+              and persistence. Every project has been an opportunity to improve,
+              not only my technical skills but also the way I think about
+              creativity, interaction, and design.
+            </p>
+            <p>
+              I believe the best work comes from genuine curiosity and a passion
+              for creating. Whether I'm building interactive experiences,
+              designing digital art, or tackling technical challenges, I enjoy
+              turning ideas into something real. That mindset keeps me learning,
+              improving, and creating work that people can genuinely enjoy and
+              connect with.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2010–2026 Mark Hunanyan</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </footer>
+
+    <script src="assets/js/site.js?v=1" defer></script>
+  </body>
+</html>

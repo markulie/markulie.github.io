@@ -1,0 +1,371 @@
+<!doctype html>
+<!-- Palette is set right here in the markup — no JavaScript, so there is
+     never a flash of the wrong theme. Change "dark" to "light" to flip. -->
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Codename Playa — Mark Hunanyan</title>
+    <meta name="description" content="Codename Playa — an open world sandbox game built with Unreal Engine. Survival gameplay, dynamic weather, modular weapons, and VR support." />
+    <link rel="canonical" href="https://markulie.github.io/playa.html" />
+    <meta name="author" content="Mark Hunanyan" />
+    <meta name="theme-color" content="#0d0f10" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mark Hunanyan" />
+    <meta property="og:title" content="Codename Playa — Mark Hunanyan" />
+    <meta property="og:description" content="Codename Playa — an open world sandbox game built with Unreal Engine. Survival gameplay, dynamic weather, modular weapons, and VR support." />
+    <meta property="og:url" content="https://markulie.github.io/playa.html" />
+    <meta property="og:image" content="https://markulie.github.io/assets/img/playa/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Codename Playa — Mark Hunanyan" />
+    <meta name="twitter:description" content="Codename Playa — an open world sandbox game built with Unreal Engine. Survival gameplay, dynamic weather, modular weapons, and VR support." />
+    <meta name="twitter:image" content="https://markulie.github.io/assets/img/playa/og.jpg" />
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/share-tech-mono-latin.woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/site.css?v=1" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <canvas id="flowField" aria-hidden="true" data-game="false"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span>MARK HUNANYAN</span>
+        <span class="brand__blink" aria-hidden="true"></span>
+        <!-- Backspaces itself and types the next role. aria-hidden so the
+             link is announced as "MARK HUNANYAN", not every keystroke. -->
+        <span class="brand__label" id="brandLabel" aria-hidden="true">TECH ARTIST</span>
+      </a>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="playa-hero">
+        <div class="playa-hero__media" aria-hidden="true">
+          <img
+            src="assets/img/playa/hero.webp"
+            width="1024"
+            height="950"
+            alt=""
+            fetchpriority="high"
+          />
+          <!-- No src here on purpose: autoplay overrides preload="none", so an
+               inline source would pull 18 MB on every visit. site.js attaches
+               it only on a wide, fast, non-reduced-motion viewport. -->
+          <video
+            id="heroVideo"
+            data-src="media/playa.mp4"
+            muted
+            loop
+            playsinline
+            preload="none"
+            disablepictureinpicture
+          ></video>
+        </div>
+
+        <div class="playa-hero__content">
+          <img
+            class="playa-hero__logo"
+            src="assets/img/playa/logo.webp"
+            width="800"
+            height="119"
+            alt="Codename Playa"
+            fetchpriority="high"
+          />
+          <h1 class="sr-only">Codename Playa</h1>
+          <p class="playa-hero__meta">September 2019 · C++, Unreal Engine</p>
+          <a class="btn btn--primary" href="https://www.youtube.com/watch?v=i_wZN2BnQpc" target="_blank" rel="noopener"
+            >Watch the teaser <span class="arrow" aria-hidden="true">→</span></a
+          >
+        </div>
+      </section>
+
+      <nav class="jump" aria-label="Features">
+        <a href="#gameplay">Gameplay</a>
+        <a href="#world">World</a>
+        <a href="#multiplayer">Multiplayer</a>
+        <a href="#vr">VR</a>
+        <a href="#environment">Environment</a>
+        <a href="#balistics">Ballistics</a>
+        <a href="#weapons">Weapons</a>
+        <a href="#base">Base</a>
+        <a href="#daynight">Weather</a>
+        <a href="#surface">Surface</a>
+      </nav>
+
+      <section class="feature" id="gameplay" data-side="right">
+        <div class="feature__bg" aria-hidden="true">
+          <img
+            src="assets/img/playa/gameplay-wide.webp"
+            width="1920"
+            height="675"
+            alt=""
+            loading="lazy" decoding="async"
+          />
+        </div>
+        <div class="feature__box">
+          <h2>Gameplay</h2>
+          <p>Strategic survival gameplay</p>
+          <img
+            src="assets/img/playa/gameplay-box.webp"
+            width="920"
+            height="518"
+            alt="Gameplay — Strategic survival gameplay"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="feature" id="world" data-side="left">
+        <div class="feature__bg" aria-hidden="true">
+          <img
+            src="assets/img/playa/world-wide.webp"
+            width="1920"
+            height="675"
+            alt=""
+            loading="lazy" decoding="async"
+          />
+        </div>
+        <div class="feature__box">
+          <h2>World</h2>
+          <p>Huge open world</p>
+          <img
+            src="assets/img/playa/world-box.webp"
+            width="920"
+            height="518"
+            alt="World — Huge open world"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="feature" id="multiplayer" data-side="right">
+        <div class="feature__bg" aria-hidden="true">
+          <img
+            src="assets/img/playa/multiplayer-wide.webp"
+            width="1920"
+            height="675"
+            alt=""
+            loading="lazy" decoding="async"
+          />
+        </div>
+        <div class="feature__box">
+          <h2>Multiplayer</h2>
+          <p>Play together, or against</p>
+          <img
+            src="assets/img/playa/multiplayer-box.webp"
+            width="920"
+            height="518"
+            alt="Multiplayer — Play together, or against"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="feature" id="vr" data-side="left">
+        <div class="feature__bg" aria-hidden="true">
+          <img
+            src="assets/img/playa/vr-wide.webp"
+            width="1920"
+            height="675"
+            alt=""
+            loading="lazy" decoding="async"
+          />
+        </div>
+        <div class="feature__box">
+          <h2>VR</h2>
+          <p>Built for virtual reality</p>
+          <img
+            src="assets/img/playa/vr-box.webp"
+            width="920"
+            height="518"
+            alt="VR — Built for virtual reality"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="feature" id="environment" data-side="right">
+        <div class="feature__bg" aria-hidden="true">
+          <img
+            src="assets/img/playa/environment-wide.webp"
+            width="1920"
+            height="675"
+            alt=""
+            loading="lazy" decoding="async"
+          />
+        </div>
+        <div class="feature__box">
+          <h2>Environment</h2>
+          <p>Reactive, living environment</p>
+          <img
+            src="assets/img/playa/environment-box.webp"
+            width="920"
+            height="518"
+            alt="Environment — Reactive, living environment"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="feature" id="balistics" data-side="left">
+        <div class="feature__bg" aria-hidden="true">
+          <img
+            src="assets/img/playa/balistics-wide.webp"
+            width="1920"
+            height="675"
+            alt=""
+            loading="lazy" decoding="async"
+          />
+        </div>
+        <div class="feature__box">
+          <h2>Ballistics</h2>
+          <p>Physically simulated ballistics</p>
+          <img
+            src="assets/img/playa/balistics-box.webp"
+            width="920"
+            height="518"
+            alt="Ballistics — Physically simulated ballistics"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="feature" id="weapons" data-side="right">
+        <div class="feature__bg" aria-hidden="true">
+          <img
+            src="assets/img/playa/weapons-wide.webp"
+            width="1920"
+            height="675"
+            alt=""
+            loading="lazy" decoding="async"
+          />
+        </div>
+        <div class="feature__box">
+          <h2>Weapons</h2>
+          <p>Modular weapon system</p>
+          <img
+            src="assets/img/playa/weapons-box.webp"
+            width="920"
+            height="518"
+            alt="Weapons — Modular weapon system"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="feature" id="base" data-side="left">
+        <div class="feature__bg" aria-hidden="true">
+          <img
+            src="assets/img/playa/base-wide.webp"
+            width="1920"
+            height="675"
+            alt=""
+            loading="lazy" decoding="async"
+          />
+        </div>
+        <div class="feature__box">
+          <h2>Base</h2>
+          <p>Build and defend your base</p>
+          <img
+            src="assets/img/playa/base-box.webp"
+            width="920"
+            height="518"
+            alt="Base — Build and defend your base"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="feature" id="daynight" data-side="right">
+        <div class="feature__bg" aria-hidden="true">
+          <img
+            src="assets/img/playa/daynight-wide.webp"
+            width="1920"
+            height="675"
+            alt=""
+            loading="lazy" decoding="async"
+          />
+        </div>
+        <div class="feature__box">
+          <h2>Weather</h2>
+          <p>Time and dynamic weather system</p>
+          <img
+            src="assets/img/playa/daynight-box.webp"
+            width="920"
+            height="518"
+            alt="Weather — Time and dynamic weather system"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </section>
+
+      <section class="feature" id="surface" data-side="left">
+        <div class="feature__bg" aria-hidden="true">
+          <img
+            src="assets/img/playa/surface-wide.webp"
+            width="1920"
+            height="675"
+            alt=""
+            loading="lazy" decoding="async"
+          />
+        </div>
+        <div class="feature__box">
+          <h2>Surface</h2>
+          <p>Natural surface response</p>
+          <img
+            src="assets/img/playa/surface-box.webp"
+            width="920"
+            height="518"
+            alt="Surface — Natural surface response"
+            loading="lazy" decoding="async"
+          />
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2010–2026 Mark Hunanyan</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </footer>
+
+    <script src="assets/js/site.js?v=1" defer></script>
+  </body>
+</html>

@@ -1,0 +1,537 @@
+<!doctype html>
+<!-- Palette is set right here in the markup — no JavaScript, so there is
+     never a flash of the wrong theme. Change "dark" to "light" to flip. -->
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mark Hunanyan</title>
+    <meta name="description" content="Portfolio of Mark Hunanyan — technical artist and creative technologist. Tools for 3ds Max, Maya, and Unity, real-time work, and 3D art." />
+    <link rel="canonical" href="https://markulie.github.io/" />
+    <meta name="author" content="Mark Hunanyan" />
+    <meta name="theme-color" content="#0d0f10" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mark Hunanyan" />
+    <meta property="og:title" content="Mark Hunanyan" />
+    <meta property="og:description" content="Portfolio of Mark Hunanyan — technical artist and creative technologist. Tools for 3ds Max, Maya, and Unity, real-time work, and 3D art." />
+    <meta property="og:url" content="https://markulie.github.io/" />
+    <meta property="og:image" content="https://markulie.github.io/assets/img/og-default.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mark Hunanyan" />
+    <meta name="twitter:description" content="Portfolio of Mark Hunanyan — technical artist and creative technologist. Tools for 3ds Max, Maya, and Unity, real-time work, and 3D art." />
+    <meta name="twitter:image" content="https://markulie.github.io/assets/img/og-default.jpg" />
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/share-tech-mono-latin.woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/site.css?v=1" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <canvas id="flowField" aria-hidden="true" data-game="true"></canvas>
+    <button id="targetHit" class="target-hit" type="button">
+      <span class="sr-only">Release collected particles</span>
+    </button>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span>MARK HUNANYAN</span>
+        <span class="brand__blink" aria-hidden="true"></span>
+        <!-- Backspaces itself and types the next role. aria-hidden so the
+             link is announced as "MARK HUNANYAN", not every keystroke. -->
+        <span class="brand__label" id="brandLabel" aria-hidden="true">TECH ARTIST</span>
+      </a>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <h1 class="sr-only">Mark Hunanyan — Technical Artist</h1>
+
+      <section class="section" id="work" aria-label="Work">
+        <div class="grid">
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">DEC 2014</span>
+            <img
+              src="assets/img/index/wirecolor-pro.webp"
+              width="800"
+              height="600"
+              alt=""
+              fetchpriority="high"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/3dsmax-wirecolor-pro" target="_blank" rel="noopener"
+                >WireColor Pro<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">Object wire colour randomisation, instance sync, gradients, and material control for 3ds Max.</p>
+            <ul class="card__tools">
+              <li>MaxScript</li>
+              <li>3ds Max</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">MAR 2014</span>
+            <img
+              src="assets/img/index/light-of-life.webp"
+              width="800"
+              height="600"
+              alt=""
+              fetchpriority="high"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="light-of-life.html"
+                >Light of Life</a
+              >
+            </h3>
+            <p class="card__desc">Still life 3D artwork, featured by Autodesk across their social channels.</p>
+            <ul class="card__tools">
+              <li>3ds Max</li>
+              <li>V-Ray</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">SEP 2019</span>
+            <img
+              src="assets/img/index/codename-playa.webp"
+              width="800"
+              height="600"
+              alt=""
+              fetchpriority="high"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="playa.html"
+                >Codename Playa</a
+              >
+            </h3>
+            <p class="card__desc">Open world sandbox game made with Unreal Engine.</p>
+            <ul class="card__tools">
+              <li>C++</li>
+              <li>Unreal</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">OCT 2022</span>
+            <img
+              src="assets/img/index/smooth-follow.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="games/smoothfollow/"
+                >Unity Smooth Follow</a
+              >
+            </h3>
+            <p class="card__desc">Smooth follow with Lerp for Unity — playable in the browser.</p>
+            <ul class="card__tools">
+              <li>C#</li>
+              <li>Unity</li>
+              <li>WebGL</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">MAY 2015</span>
+            <img
+              src="assets/img/index/randomx.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/3dsmax-randomx" target="_blank" rel="noopener"
+                >RandomX<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">Transform randomiser for 3ds Max.</p>
+            <ul class="card__tools">
+              <li>MaxScript</li>
+              <li>3ds Max</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">SEP 2022</span>
+            <img
+              src="assets/img/index/animlayercleaner.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/3dsmax-anim-layer-cleaner" target="_blank" rel="noopener"
+                >AnimLayerCleaner<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">Bugged animation layer cleaner for 3ds Max.</p>
+            <ul class="card__tools">
+              <li>MaxScript</li>
+              <li>3ds Max</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">APR 2015</span>
+            <img
+              src="assets/img/index/hand-rig.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/3dsmax-hand-rig" target="_blank" rel="noopener"
+                >Hand Rig<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">Hand rig demonstration in Autodesk 3ds Max.</p>
+            <ul class="card__tools">
+              <li>3ds Max</li>
+              <li>Rigging</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">APR 2014</span>
+            <img
+              src="assets/img/index/tishka-trains.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="trains.html"
+                >Tishka Trains</a
+              >
+            </h3>
+            <p class="card__desc">3D cartoon TV series.</p>
+            <ul class="card__tools">
+              <li>Maya</li>
+              <li>3ds Max</li>
+              <li>mental ray</li>
+              <li>After Effects</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">MAY 2013</span>
+            <img
+              src="assets/img/index/vrayblendmtl.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/3dsmax-vrayblendmtl" target="_blank" rel="noopener"
+                >VrayBlendMtl<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">A V-Ray blend material example for Autodesk 3ds Max.</p>
+            <ul class="card__tools">
+              <li>3ds Max</li>
+              <li>V-Ray</li>
+              <li>Shading</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">APR 2017</span>
+            <img
+              src="assets/img/index/luneta.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="luneta.html"
+                >LUNETA</a
+              >
+            </h3>
+            <p class="card__desc">Arcade game with meditative music, featured by Apple in 150+ countries.</p>
+            <ul class="card__tools">
+              <li>C#</li>
+              <li>Unity</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">AUG 2023</span>
+            <img
+              src="assets/img/index/unity-multitouch.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/unity-multitouch" target="_blank" rel="noopener"
+                >Unity Proper Multitouch<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">A proper implementation of multitouch input in Unity.</p>
+            <ul class="card__tools">
+              <li>C#</li>
+              <li>Unity</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">NOV 2025</span>
+            <img
+              src="assets/img/index/vscode-version-bar.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/vscode-version-bar" target="_blank" rel="noopener"
+                >VS Code Version Bar<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">A VS Code status bar that displays the current versions of VS Code, Node.js, and npm.</p>
+            <ul class="card__tools">
+              <li>TypeScript</li>
+              <li>VS Code</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">FEB 2015</span>
+            <img
+              src="assets/img/index/xcalc-max.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/3dsmax-xcalc" target="_blank" rel="noopener"
+                >xCalc for 3ds Max<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">Simple calculator for Autodesk 3ds Max.</p>
+            <ul class="card__tools">
+              <li>MaxScript</li>
+              <li>3ds Max</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">FEB 2015</span>
+            <img
+              src="assets/img/index/xcalc-maya.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/maya-xcalc" target="_blank" rel="noopener"
+                >xCalc for Maya<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">Simple calculator for Autodesk Maya.</p>
+            <ul class="card__tools">
+              <li>MEL</li>
+              <li>Maya</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">JUL 2023</span>
+            <img
+              src="assets/img/index/windows-cleaner.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/windows-cleaner" target="_blank" rel="noopener"
+                >Windows Cleaner<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">Windows cleaning, fixing, and customising scripts collection.</p>
+            <ul class="card__tools">
+              <li>PowerShell</li>
+              <li>Windows</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">OCT 2022</span>
+            <img
+              src="assets/img/index/always-on-top.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/unity-always-on-top" target="_blank" rel="noopener"
+                >Unity Always On Top Shader<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">Always on top shader for Unity Engine.</p>
+            <ul class="card__tools">
+              <li>Shader</li>
+              <li>Unity</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card__art">
+            <span class="card__date">MAR 2026</span>
+            <img
+              src="assets/img/index/davinci-combobox-fix.webp"
+              width="800"
+              height="600"
+              alt=""
+              loading="lazy" decoding="async"
+            />
+          </div>
+          <div class="card__body">
+            <h3 class="card__title">
+              <a href="https://github.com/markulie/DaVinciResolve-macOS-Combobox-Fix" target="_blank" rel="noopener"
+                >DaVinci Resolve macOS Combobox Fix<span class="card__ext" aria-label="(opens in a new tab)">↗</span></a
+              >
+            </h3>
+            <p class="card__desc">macOS combobox navigation fix for DaVinci Resolve and other apps.</p>
+            <ul class="card__tools">
+              <li>macOS</li>
+              <li>DaVinci Resolve</li>
+              <li>Python</li>
+              <li>Free Download</li>
+            </ul>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact" aria-labelledby="contact-head">
+        <h2 id="contact-head">Contact</h2>
+        <p>markhuna(at)gmail(dot)com</p>
+        <div class="contact__links">
+          <a class="btn btn--primary" href="mailto:markhuna@gmail.com"
+            >Email <span class="arrow" aria-hidden="true">→</span></a
+          >
+          <a class="btn" href="https://github.com/markulie" target="_blank" rel="noopener"
+            >GitHub <span class="arrow" aria-hidden="true">→</span></a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2010–2026 Mark Hunanyan</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </footer>
+
+    <script src="assets/js/site.js?v=1" defer></script>
+  </body>
+</html>

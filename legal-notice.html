@@ -1,0 +1,132 @@
+<!doctype html>
+<!-- Palette is set right here in the markup — no JavaScript, so there is
+     never a flash of the wrong theme. Change "dark" to "light" to flip. -->
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Legal Notice — Mark Hunanyan</title>
+    <meta name="description" content="Legal notice and copyright information for markulie.github.io." />
+    <link rel="canonical" href="https://markulie.github.io/legal-notice.html" />
+    <meta name="author" content="Mark Hunanyan" />
+    <meta name="theme-color" content="#f3f2ee" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mark Hunanyan" />
+    <meta property="og:title" content="Legal Notice — Mark Hunanyan" />
+    <meta property="og:description" content="Legal notice and copyright information for markulie.github.io." />
+    <meta property="og:url" content="https://markulie.github.io/legal-notice.html" />
+    <meta property="og:image" content="https://markulie.github.io/assets/img/og-default.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Legal Notice — Mark Hunanyan" />
+    <meta name="twitter:description" content="Legal notice and copyright information for markulie.github.io." />
+    <meta name="twitter:image" content="https://markulie.github.io/assets/img/og-default.jpg" />
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/share-tech-mono-latin.woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/site.css?v=1" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <canvas id="flowField" aria-hidden="true" data-game="false"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span>MARK HUNANYAN</span>
+        <span class="brand__blink" aria-hidden="true"></span>
+        <!-- Backspaces itself and types the next role. aria-hidden so the
+             link is announced as "MARK HUNANYAN", not every keystroke. -->
+        <span class="brand__label" id="brandLabel" aria-hidden="true">TECH ARTIST</span>
+      </a>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="section-head">
+          <h1>Legal Notice</h1>
+        </div>
+
+        <div class="prose">
+          <h2>Copyright</h2>
+          <p>
+            All work shown on this site — images, video, source code, and
+            written content — is the property of Mark Hunanyan unless otherwise
+            credited, and may not be reproduced without permission.
+          </p>
+          <p>
+            Projects published under an open source licence on
+            <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+            are governed by the licence included in their respective
+            repositories.
+          </p>
+
+          <h2>Trademarks</h2>
+          <p>
+            Autodesk, 3ds Max, and Maya are trademarks of Autodesk, Inc. Unity
+            is a trademark of Unity Technologies. Unreal Engine is a trademark
+            of Epic Games, Inc. DaVinci Resolve is a trademark of Blackmagic
+            Design. All other product names, logos, and brands are the property
+            of their respective owners and are used for identification purposes
+            only.
+          </p>
+
+          <h2>Tracking</h2>
+          <p>
+            This site does not use tracking cookies, analytics, or third-party
+            advertising. See the <a href="privacy.html">privacy policy</a> for
+            details.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            Mark Hunanyan —
+            <a href="mailto:markhuna@gmail.com">markhuna@gmail.com</a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2010–2026 Mark Hunanyan</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </footer>
+
+    <script src="assets/js/site.js?v=1" defer></script>
+  </body>
+</html>

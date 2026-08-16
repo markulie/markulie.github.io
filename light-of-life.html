@@ -1,0 +1,201 @@
+<!doctype html>
+<!-- Palette is set right here in the markup — no JavaScript, so there is
+     never a flash of the wrong theme. Change "dark" to "light" to flip. -->
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Light of Life — Mark Hunanyan</title>
+    <meta name="description" content="Light of Life — still life 3D artwork by Mark Hunanyan, created in 3ds Max and V-Ray, featured by Autodesk across their social channels in 2014." />
+    <link rel="canonical" href="https://markulie.github.io/light-of-life.html" />
+    <meta name="author" content="Mark Hunanyan" />
+    <meta name="theme-color" content="#f3f2ee" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mark Hunanyan" />
+    <meta property="og:title" content="Light of Life — Mark Hunanyan" />
+    <meta property="og:description" content="Light of Life — still life 3D artwork by Mark Hunanyan, created in 3ds Max and V-Ray, featured by Autodesk across their social channels in 2014." />
+    <meta property="og:url" content="https://markulie.github.io/light-of-life.html" />
+    <meta property="og:image" content="https://markulie.github.io/assets/img/og-default.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Light of Life — Mark Hunanyan" />
+    <meta name="twitter:description" content="Light of Life — still life 3D artwork by Mark Hunanyan, created in 3ds Max and V-Ray, featured by Autodesk across their social channels in 2014." />
+    <meta name="twitter:image" content="https://markulie.github.io/assets/img/og-default.jpg" />
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/share-tech-mono-latin.woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/site.css?v=1" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <canvas id="flowField" aria-hidden="true" data-game="false"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span>MARK HUNANYAN</span>
+        <span class="brand__blink" aria-hidden="true"></span>
+        <!-- Backspaces itself and types the next role. aria-hidden so the
+             link is announced as "MARK HUNANYAN", not every keystroke. -->
+        <span class="brand__label" id="brandLabel" aria-hidden="true">TECH ARTIST</span>
+      </a>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="section-head">
+          <h1>Light of Life</h1>
+          <p class="meta">March 2014 · 3ds Max, V-Ray</p>
+        </div>
+
+        <div class="prose">
+      <figure>
+        <img
+          src="assets/img/light-of-life/hero.webp"
+          width="1400"
+          height="700"
+          alt="Light of Life — a still life scene lit by a single warm lamp, rendered in V-Ray"
+          loading="lazy" decoding="async"
+        />
+      </figure>
+
+          <h2>Press &amp; features</h2>
+          <ul class="press">
+            <li>
+              <em>Autodesk 3ds Max social image from 15 May 2014 to 11 August 2014.</em>
+              <span class="press__links">
+                <a href="https://web.facebook.com/Autodesk3dsMax/photos/a.10150614139497851.394015.21238962850/10152220518437851/?type=1&amp;theater" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://twitter.com/adsk3dsmax" target="_blank" rel="noopener">X</a>
+              </span>
+            </li>
+            <li>
+              <em>3D Artist magazine — “Light of Life” is our Image of the Day.</em>
+              <span class="press__links">
+                <a href="https://www.facebook.com/3DArtistMagazine/posts/808092325869907" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://twitter.com/3DArtist/status/484383450498338818" target="_blank" rel="noopener">X</a>
+              </span>
+            </li>
+            <li>
+              <em>3D Artists — “Light of Life” is our Image of the Day.</em>
+              <span class="press__links">
+                <a href="https://www.facebook.com/artists.of.world/posts/870919329604796" target="_blank" rel="noopener">Facebook</a>
+              </span>
+            </li>
+          </ul>
+
+      <figure>
+        <img
+          src="assets/img/light-of-life/awards.webp"
+          width="1380"
+          height="169"
+          alt="Awards and features badges collected by Light of Life"
+          loading="lazy" decoding="async"
+        />
+      </figure>
+
+      <figure>
+        <img
+          src="assets/img/light-of-life/autodesk.webp"
+          width="850"
+          height="315"
+          alt="Light of Life used as the Autodesk 3ds Max social media cover image"
+          loading="lazy" decoding="async"
+        />
+        <figcaption>Featured as the Autodesk 3ds Max cover image.</figcaption>
+      </figure>
+
+          <h2>History</h2>
+          <p>
+            “Light of Life” is a deeply personal project that I first started in
+            2013. For various reasons, I had to put it aside for about a year.
+            In March 2014, I came back to it with improved skills, a fresh
+            perspective, and the motivation to finally bring the idea to life.
+          </p>
+          <p>
+            The artwork was created using 3ds Max 2014, rendered with V-Ray 3,
+            and finished with a bit of Photoshop for colour correction. I spent
+            around a month and a half refining the scene, which ultimately
+            reached roughly 412,000 polygons. Looking back, it represents an
+            important milestone in my artistic journey and reflects how much I
+            had grown as an artist during that time.
+          </p>
+          <p>
+            A few months after completing it, I shared “Light of Life” on
+            CGSociety. Not long afterward, Autodesk contacted me to ask if they
+            could feature it as the cover image for their official social media
+            channels, including Facebook and Twitter. It was completely
+            unexpected, and I was genuinely honoured that the developers of the
+            software I enjoyed working with wanted to showcase my work.
+          </p>
+          <p>
+            Seeing “Light of Life” featured by Autodesk became one of the
+            highlights of my early career. It gave me confidence that the time
+            and effort I had invested in the project had been worthwhile, and it
+            motivated me to keep learning, improving, and creating new work.
+          </p>
+
+      <figure>
+        <img
+          src="assets/img/light-of-life/detail-03.webp"
+          width="940"
+          height="508"
+          alt="Detail view of the Light of Life scene"
+          loading="lazy" decoding="async"
+        />
+      </figure>
+      <figure>
+        <img
+          src="assets/img/light-of-life/detail-01.webp"
+          width="940"
+          height="470"
+          alt="Alternate lighting pass of the Light of Life scene"
+          loading="lazy" decoding="async"
+        />
+      </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2010–2026 Mark Hunanyan</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </footer>
+
+    <script src="assets/js/site.js?v=1" defer></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!doctype html>
+<!-- Palette is set right here in the markup — no JavaScript, so there is
+     never a flash of the wrong theme. Change "dark" to "light" to flip. -->
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LUNETA — Mark Hunanyan</title>
+    <meta name="description" content="LUNETA — an arcade game with meditative music for iOS and Android, featured by Apple in 150+ countries. Source code released for educational use." />
+    <link rel="canonical" href="https://markulie.github.io/luneta.html" />
+    <meta name="author" content="Mark Hunanyan" />
+    <meta name="theme-color" content="#f3f2ee" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mark Hunanyan" />
+    <meta property="og:title" content="LUNETA — Mark Hunanyan" />
+    <meta property="og:description" content="LUNETA — an arcade game with meditative music for iOS and Android, featured by Apple in 150+ countries. Source code released for educational use." />
+    <meta property="og:url" content="https://markulie.github.io/luneta.html" />
+    <meta property="og:image" content="https://markulie.github.io/assets/img/luneta/og.jpg" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="538" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="LUNETA — Mark Hunanyan" />
+    <meta name="twitter:description" content="LUNETA — an arcade game with meditative music for iOS and Android, featured by Apple in 150+ countries. Source code released for educational use." />
+    <meta name="twitter:image" content="https://markulie.github.io/assets/img/luneta/og.jpg" />
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="assets/fonts/share-tech-mono-latin.woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="assets/css/site.css?v=1" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <canvas id="flowField" aria-hidden="true" data-game="false"></canvas>
+
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span>MARK HUNANYAN</span>
+        <span class="brand__blink" aria-hidden="true"></span>
+        <!-- Backspaces itself and types the next role. aria-hidden so the
+             link is announced as "MARK HUNANYAN", not every keystroke. -->
+        <span class="brand__label" id="brandLabel" aria-hidden="true">TECH ARTIST</span>
+      </a>
+
+      <button
+        id="menuToggle"
+        class="menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="siteNav"
+      >
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="section">
+        <div class="luneta-head">
+          <img
+            class="luneta-logo"
+            src="assets/img/luneta/logo.webp"
+            width="1000"
+            height="131"
+            alt="LUNETA"
+            fetchpriority="high"
+          />
+          <h1 class="sr-only">LUNETA</h1>
+          <p class="meta">April 2017 · C#, Unity · iOS &amp; Android</p>
+          <img
+            class="luneta-icon"
+            src="assets/img/luneta/icon.webp"
+            width="240"
+            height="240"
+            alt="LUNETA app icon"
+            loading="lazy" decoding="async"
+          />
+        </div>
+
+        <div class="prose">
+          <div class="embed">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/rP_t0bxryYs?controls=0"
+              title="LUNETA — gameplay trailer"
+              loading="lazy"
+              allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <p class="lead">
+            Enter the infinite galaxy of LUNETA, home to a great many beautiful
+            worlds.
+          </p>
+          <p>
+            LUNETA is an arcade game with absorbing gameplay and meditative
+            music, created in 2016. It is now free and open for educational
+            purposes, and the source code is designed for iOS and Android
+            devices.
+          </p>
+
+          <h2>Features</h2>
+          <ul>
+            <li>4 games in 1</li>
+            <li>Meditative relaxation music</li>
+            <li>Real parallaxing</li>
+            <li>Haptic feedback support</li>
+            <li>Motion gesture events</li>
+            <li>3D Touch and haptic support</li>
+            <li>Integrated store services</li>
+            <li>60+ FPS even on older devices</li>
+          </ul>
+
+          <h2>Press</h2>
+          <ul class="press press--stacked">
+            <li>
+              <p><em>“Featured by Apple in 150+ countries.”</em></p>
+              <p class="press__meta">
+                <a href="https://itunes.apple.com/us/app/luneta/id1209753071" target="_blank" rel="noopener">App Store</a>
+                <span>2016</span>
+              </p>
+            </li>
+            <li>
+              <p><em>“Playing on iOS can be intense, reflexive, acting, laughing, or fearful, but it can also be relaxing, soothing, and refreshing.”</em></p>
+              <p class="press__meta">
+                <a href="http://www.iphon.fr/post/concours-jeu-ios-7-licences-luneta-883098" target="_blank" rel="noopener">iPhon.fr</a>
+                <span>2016</span>
+              </p>
+            </li>
+            <li>
+              <p><em>“Shortlisted by PGConnects.”</em></p>
+              <p class="press__meta">
+                <a href="https://www.pocketgamer.biz/" target="_blank" rel="noopener">Pocket Gamer</a>
+                <span>2017</span>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2010–2026 Mark Hunanyan</p>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="https://github.com/markulie" target="_blank" rel="noopener">GitHub</a>
+        <a href="legal-notice.html">Legal Notice</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </nav>
+    </footer>
+
+    <script src="assets/js/site.js?v=1" defer></script>
+  </body>
+</html>
