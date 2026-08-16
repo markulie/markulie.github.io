@@ -77,7 +77,10 @@
     <main id="main">
       <h1 class="sr-only">Mark Hunanyan — Technical Artist</h1>
 
-      <section class="section" id="work" aria-label="Work">
+      <section class="section" id="work" aria-labelledby="work-head">
+        <!-- Card titles are h3; this keeps the outline h1 > h2 > h3
+             without drawing anything. -->
+        <h2 id="work-head" class="sr-only">Selected work</h2>
         <div class="grid">
         <article class="card">
           <div class="card__art">
